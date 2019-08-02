@@ -1,105 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/bgs2"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="375dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:text="WELCOME TO CS_AKU SYLLABUS"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
         android:gravity="center"
-        android:textSize="21sp"
+        android:text="WELCOME TO CS_AKU SYLLABUS"
         android:textColor="@color/colorWhite"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/bone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bone"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
         android:text="1ST SEM"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="176dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/btwo"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
         android:text="2ND SEM"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bthree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bone" />
 
     <Button
         android:id="@+id/bthree"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
         android:text="3RD SEM"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="214dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bfour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btwo" />
 
     <Button
         android:id="@+id/bfour"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
         android:text="4TH SEM"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="262dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bfive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthree" />
 
     <Button
         android:id="@+id/bfive"
-        android:layout_width="250dp"
-        android:textColor="@color/colorDarkBlue"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
         android:text="5TH SEM"
-        android:textSize="15sp"/>
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/bsix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfour" />
 
     <Button
         android:id="@+id/bsix"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
         android:text="6TH SEM"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/bseven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfive" />
 
     <Button
         android:id="@+id/bseven"
-        android:layout_width="250dp"
-        android:textColor="@color/colorDarkBlue"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
         android:text="7TH SEM"
-        android:textSize="15sp"/>
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/beight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bsix" />
 
     <Button
         android:id="@+id/beight"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
         android:text="8TH SEM"
-        android:textSize="15sp"/>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="375dp"
-        android:layout_height="70dp" />
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bseven" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="375dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:text="Thank you for using this app. This app is created for demo purpose. @Sanjay Shah "
         android:textColor="@color/colorWhite"
-        android:text="Thank you for using this app. This app is created for demo purpose. @Sanjay Shah " />
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beight" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="125dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="287dp" />
+</android.support.constraint.ConstraintLayout>
 
 
